@@ -1,0 +1,8 @@
+course = input("Course name: ")
+student=input("Your name and last name: ")
+nickname = input("Nickname: ")
+grade = input("Your grade: ")
+pythonExpert = input("Experience in this area: ")
+print("course: " + course + '\n' + "student: " + student + '\n' + "nickname: " + nickname)
+print("grade: " , grade)
+print("pythonExpert: " , pythonExpert)
