@@ -7,8 +7,5 @@ args = parser.parse_args()
 print("The given text: "+args.script)
 print("Start index:",args.int1)
 print("End index:",args.int2)
-a=args.int1
-b=args.int2
-c=args.script
 print("Output string: ")
-print(c[a::b])
+print(args.script[args.int1::args.int2])
