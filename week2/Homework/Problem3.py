@@ -1,0 +1,10 @@
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("st", help="",type=str)
+parser.add_argument("w1", help="",type=str)
+parser.add_argument("w2", help="",type=str)
+args = parser.parse_args()
+print("The given text:", args.st)
+print("First word:", args.w1)
+print("Second word:", args.w2)
+print("Output string:",args.st.replace(args.w1,args.w2))
