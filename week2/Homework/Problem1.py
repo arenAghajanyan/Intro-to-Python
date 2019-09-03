@@ -12,14 +12,16 @@ print(now)
 if(args.day!=None):
     td1=datetime.timedelta(days=args.day) 
     print("Given days:",args.day)
+    now+=td1
   
 else:
     print("Given days: not given")
-now+=td1
+
 if(args.year!=None):
-    td1=datetime.timedelta(days=args.year*365.25)
+    td1=datetime.timedelta(days=args.year*365)
     print("Given years:",args.year)
+    now+=td1
 else:
     print("Given years: not given")
-now+=td1
+
 print("Final date:",now)
