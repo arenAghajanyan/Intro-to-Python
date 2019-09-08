@@ -9,7 +9,7 @@ now=datetime.datetime.now()
 print(now)
 
 
-if(args.day!=None):
+if args.day:
     td1=datetime.timedelta(days=args.day) 
     print("Given days:",args.day)
     now+=td1
@@ -17,7 +17,7 @@ if(args.day!=None):
 else:
     print("Given days: not given")
 
-if(args.year!=None):
+if args.year:
     td1=datetime.timedelta(days=args.year*365)
     print("Given years:",args.year)
     now+=td1
